@@ -33,7 +33,7 @@ class NewsItemCollectionViewCell: UICollectionViewCell {
         button.setTitle("Saved! 💙", for: .selected)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
         button.layer.cornerRadius = 8
-        button.addTarget(NewsItemCollectionViewCell.self, action: #selector(readLaterButtonTapped(_:)), for: .touchUpInside)
+        button.addTarget(self, action: #selector(readLaterButtonTapped(_:)), for: .touchUpInside)
         return button
     }()
     
