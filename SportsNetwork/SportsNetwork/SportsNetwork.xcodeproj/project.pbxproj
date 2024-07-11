@@ -25,6 +25,7 @@
 		EFB1F74A2C358C4B0067B910 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB1F7492C358C4B0067B910 /* WebViewController.swift */; };
 		EFB1F74C2C35C1FA0067B910 /* SavedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB1F74B2C35C1FA0067B910 /* SavedData.swift */; };
 		EFB1F74F2C3F260D0067B910 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EFB1F74E2C3F260D0067B910 /* Kingfisher */; };
+		EFF9FD502C4078B40092C87E /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF9FD4F2C4078B40092C87E /* DataModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		EFB1F7472C35784F0067B910 /* StandingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsController.swift; sourceTree = "<group>"; };
 		EFB1F7492C358C4B0067B910 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		EFB1F74B2C35C1FA0067B910 /* SavedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedData.swift; sourceTree = "<group>"; };
+		EFF9FD4F2C4078B40092C87E /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			children = (
 				EFB1F7342C343DBA0067B910 /* SportDataModel.swift */,
 				EFB1F74B2C35C1FA0067B910 /* SavedData.swift */,
+				EFF9FD4F2C4078B40092C87E /* DataModels.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				EFB1F7442C354B510067B910 /* Router.swift in Sources */,
 				EFB1F7402C3470320067B910 /* ListOfSportsController.swift in Sources */,
 				EFB1F7462C354E160067B910 /* ReadLaterController.swift in Sources */,
+				EFF9FD502C4078B40092C87E /* DataModels.swift in Sources */,
 				EFB1F74C2C35C1FA0067B910 /* SavedData.swift in Sources */,
 				EFB1F7352C343DBA0067B910 /* SportDataModel.swift in Sources */,
 				EFB1F73D2C344C8B0067B910 /* NewsItemCollectionView.swift in Sources */,

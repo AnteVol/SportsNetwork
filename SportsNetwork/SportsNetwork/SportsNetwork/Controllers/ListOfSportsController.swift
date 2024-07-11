@@ -70,7 +70,4 @@ class ListOfSportsController: UIViewController, UICollectionViewDataSource, UICo
         router.showNewsForSport(sportName: selectedSportName)
     }
     
-    @objc func showStandings() {
-        // Implement action for standings button
-    }
 }

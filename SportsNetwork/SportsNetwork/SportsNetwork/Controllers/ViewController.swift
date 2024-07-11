@@ -32,13 +32,15 @@ class ViewController: UIViewController {
         let standingsButton = UIBarButtonItem(image: emojiImage, style: .plain, target: self, action: #selector(showStandings))
         navigationItem.rightBarButtonItem = standingsButton
         
-        model?.fetchRSSFeed {
-            DispatchQueue.main.async {
-                self.collectionView.reloadData()
-            }
-        }
-        
         collectionView.backgroundColor = UIColor(red: 232/255.0, green: 241/255.0, blue: 242/255.0, alpha: 1)
+        
+        loadData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        refreshData()
     }
     
     private func setupCollectionView() {
@@ -56,6 +58,19 @@ class ViewController: UIViewController {
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         view.addSubview(collectionView)
+    }
+    
+    private func loadData() {
+        model?.fetchRSSFeed {
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        }
+    }
+    
+    private func refreshData() {
+        // Reload any parameters or data that need to be updated
+        loadData()
     }
     
     @objc private func shuffleNews() {
